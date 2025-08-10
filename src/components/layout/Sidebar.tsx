@@ -1,18 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
-    HomeIcon,
-    UsersIcon,
-    ChartBarIcon,
     CogIcon,
-    DocumentTextIcon,
-    ShoppingCartIcon,
     ChevronDownIcon,
     XMarkIcon,
-    ChevronRightIcon,
     BellIcon,
     UserCircleIcon,
-    ArrowRightOnRectangleIcon,
+
     TableCellsIcon,
 } from '@heroicons/react/24/outline';
 import { menuItems, type MenuItem } from '../../constants/menu';
