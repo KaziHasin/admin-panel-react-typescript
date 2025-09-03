@@ -19,6 +19,8 @@ import DataTableExample from '../pages/ui-components/tables/DataTableExample';
 import TanstackReactTable from '../pages/ui-components/tables/TanstackReactTable';
 import BlankPage from '../pages/ui-components/pages/BlankPage';
 import Forms from '../pages/ui/Forms';
+import Tabs from '../pages/ui/Tabs';
+import Modals from '../pages/ui/Modals';
 // TODO: Implement proper authentication check
 const isAuthenticated = () => {
     return localStorage.getItem('token') !== null;
@@ -181,6 +183,22 @@ const AppRoutes = () => {
                 element={
                     <PrivateRoute>
                         <Buttons />
+                    </PrivateRoute>
+                }
+            />
+            <Route
+                path="/ui/tabs"
+                element={
+                    <PrivateRoute>
+                        <Tabs />
+                    </PrivateRoute>
+                }
+            />
+            <Route
+                path="/ui/modals"
+                element={
+                    <PrivateRoute>
+                        <Modals />
                     </PrivateRoute>
                 }
             />
